@@ -2,27 +2,23 @@
   "name": "myflix-client",
   "version": "1.0.0",
   "description": "",
-  "entry": "src/index.html",
+  "default": "./index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jinkyulee18/myFlix-client.git"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jinkyulee18/myFlix-client/issues"
-  },
-  "homepage": "https://github.com/jinkyulee18/myFlix-client#readme",
   "dependencies": {
-    "cors": "^2.8.5",
+    "node": "19.2.0",
+    "parcel": "^2.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.8.0",
+    "process": "^0.11.10"
   }
 }
