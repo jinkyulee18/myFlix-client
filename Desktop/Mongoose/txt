@@ -1,0 +1,5 @@
+mongoimport --uri mongodb+srv://jinkyulee224:ThePassword123@myflixdb.jpogyfb.mongodb.net/test --collection movies --type json --file C:\Users\jinky\Downloads\mongodb-database-tools-windows-x86_64-100.6.1\mongodb-database-tools-windows-x86_64-100.6.1\bin\movies.json
+
+mongosh "mongodb+srv://myflixdb.jpogyfb.mongodb.net/myFirstDatabase" --apiVersion 1 --username jinkyulee224
+
+mongodb+srv://jinkyulee224:ThePassword123@myflixdb.jpogyfb.mongodb.net/myFlixDB?retryWrites=true&w=majority
