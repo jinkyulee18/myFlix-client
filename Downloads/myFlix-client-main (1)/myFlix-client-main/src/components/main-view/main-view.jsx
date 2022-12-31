@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
-import { useState, useEffect } from "react";
+
 
 
 export const MainView = () => {
   const [movies, setMovies] = useState([]);
+
   useEffect(() => {
-    fetch("whateverapi.api")
+    fetch('https://myflixdb1.herokuapp.com/')
       .then((response) => response.json)
       .then((data) => {
         const moviesFromApi = data.docs.map((doc) => {
@@ -20,7 +21,9 @@ export const MainView = () => {
             Genre: doc.Genre
 
           }
-        })
+        });
+
+        setMovies(moviesFromApi);
       });
 }, []);
 
